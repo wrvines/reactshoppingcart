@@ -1,5 +1,8 @@
 .prod-container{
     display: flex;
     flex-wrap: wrap;
-    
+    max-width: 95vw;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
 }

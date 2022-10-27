@@ -5,6 +5,7 @@ import Homepage from './components/Homepage/Homepage';
 import Cart from './components/Cart/Cart';
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -18,8 +19,8 @@ function App() {
           <Route exact path='/' element={<Homepage />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/detail' element={<ProductDetail />} />
-        
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
