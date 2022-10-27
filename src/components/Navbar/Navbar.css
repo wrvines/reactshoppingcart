@@ -1,0 +1,15 @@
+.navbar {
+    height: 3rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 2rem;
+    width: 100vw;
+}
+
+.navlink {
+    text-decoration: none;
+    
+}
