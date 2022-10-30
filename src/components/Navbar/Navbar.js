@@ -6,9 +6,9 @@ import './Navbar.css';
 function Navbar() {
   return (
     <div className='navbar'>
-        <Link className='navlink' to='/'>Homepage</Link>
+        <Link className='navlink' to='/products'>Homepage</Link>
         <Link className='navlink' to='/cart'>Cart</Link>
-        <Link className='navlink' to='/detail'>Product Detail</Link>
+        {/* <Link className='navlink' to='/products/:id'>Product Detail</Link> */}
     </div>
   )
 }

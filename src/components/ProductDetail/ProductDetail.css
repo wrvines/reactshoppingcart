@@ -1,6 +1,38 @@
 .productDetail {
-    border: 2px solid red;
+    
     width: 75vw;
     height: 75vh;
     margin: 3.5rem auto;
+    display: flex;
+    align-items: center;
+    box-shadow: .25rem .25rem 1rem .25rem rgb(99, 98, 98);
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.productDetail img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+.productInfo {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productPrice {
+    font-weight: 600;
+}
+
+.addCart {
+    width: 6rem;
+    height: 3rem;
+    border-radius: .5rem;
+    background-color: yellow;
 }

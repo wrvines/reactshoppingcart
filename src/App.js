@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Product from './components/Product/Product';
 import Homepage from './components/Homepage/Homepage';
@@ -16,9 +16,10 @@ function App() {
       <BrowserRouter>
         <Navbar /> 
         <Routes>
-          <Route exact path='/' element={<Homepage />} />
+          <Route exact path='/products' element={<Homepage />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/detail' element={<ProductDetail />} />
+          <Route path='/products/:id' element={<ProductDetail />} />
+          <Route path='*' element={<Navigate to="/products" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>

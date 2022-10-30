@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductDetail from '../ProductDetail/ProductDetail'
 
 function Cart() {
   return (

@@ -4,8 +4,8 @@ import './Product.css';
 
 function Product(props) {
   return (
-    <Link to='/detail' className='products'>
-    <div>
+    <Link to={`/products/${props.id}`}> 
+    <div className='products'>
         <h3>{props.title}</h3>
         <p>{props.price}</p>
         <p>{props.category}</p>
