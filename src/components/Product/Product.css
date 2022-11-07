@@ -23,3 +23,14 @@
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+
+.productsTitle {
+    
+    color: blue;
+}
+
+
+
+.productsCategory {
+    text-transform: capitalize;
+}
