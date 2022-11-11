@@ -8,6 +8,7 @@
     box-shadow: .25rem .25rem 1rem .25rem rgb(99, 98, 98);
     border-radius: 1rem;
     background-color: white;
+    gap: 1rem;
 }
 
 .cartImage {
