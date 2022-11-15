@@ -18,6 +18,10 @@ function ProductDetail(props) {
     });
   }, []);
 
+  function nextPage() {
+    console.log("next page");
+  }
+
   return (
     <div className="productDetail">
       <img src={selectedProduct?.image} alt={selectedProduct?.title} />
@@ -35,6 +39,7 @@ function ProductDetail(props) {
         >
           Add to Cart
         </button>
+        <p onClick={nextPage}>Next Page</p>
       </div>
     </div>
   );
