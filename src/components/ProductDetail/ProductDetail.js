@@ -18,8 +18,9 @@ function ProductDetail(props) {
     });
   }, []);
 
-  function nextPage() {
+  function nextPage(props) {
     console.log("next page");
+    
   }
 
   return (

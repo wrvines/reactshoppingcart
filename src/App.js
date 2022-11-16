@@ -12,6 +12,10 @@ function App() {
   //lifting up state
   //create state to store all products added to cart
   const [cartProducts, setCartProducts] = React.useState([]);
+
+  //create state for search value to send to homepage
+  const [productSearchValue, setProductSearchValue] = React.useState("");
+
   //create function used by ProductDetail to add item to cart
   function addProductToCart(productToAdd) {
     // console.log(productToAdd);
@@ -68,12 +72,22 @@ function App() {
     setCartProducts(newCartProducts);
   }
 
+  function handleProductSearch(searchInput) {
+    console.log("in app", searchInput);
+    //set the state
+    setProductSearchValue(searchInput);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar handleProductSearch={handleProductSearch} />
         <Routes>
-          <Route exact path="/products" element={<Homepage />} />
+          <Route
+            exact
+            path="/products"
+            element={<Homepage productSearchValue={productSearchValue} />}
+          />
           <Route
             path="/cart"
             element={
