@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Product from "../Product/Product";
 import "./ProductDetail.css";
+import { Link } from "react-router-dom";
 
 function ProductDetail(props) {
   console.log("need the param");
@@ -20,7 +21,6 @@ function ProductDetail(props) {
 
   function nextPage(props) {
     console.log("next page");
-    
   }
 
   return (
@@ -40,7 +40,9 @@ function ProductDetail(props) {
         >
           Add to Cart
         </button>
-        <p onClick={nextPage}>Next Page</p>
+        <Link to={`/products/${selectedProduct?.id} + 1`}>
+          <p>Next Page</p>
+        </Link>
       </div>
     </div>
   );
